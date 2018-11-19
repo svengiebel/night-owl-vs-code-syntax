@@ -10,7 +10,7 @@
 ## Developers
 
 Original theme by [Sarah Drasner](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl&WT.mc_id=twitter-social-sdras)  
-Fored from: [CragVFX](https://github.com/CragVFX/night-owl-vs-code-syntax)
+Forked from: [CragVFX](https://github.com/CragVFX/night-owl-vs-code-syntax)
 
 
 ## License
