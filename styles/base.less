@@ -116,7 +116,7 @@ atom-text-editor.is-focused .line.cursor-line {
   color: @syntax-color-string;
 }
 
-.syntax--meta.syntax--function.syntax--method.syntax--js
+.syntax--meta.syntax--function.syntax--js
   > .syntax--variable.syntax--other.syntax--readwrite.syntax--js
   + .syntax--meta.syntax--delimiter.syntax--comma.syntax--js
   + .syntax--variable.syntax--other.syntax--readwrite.syntax--js {
@@ -126,6 +126,16 @@ atom-text-editor.is-focused .line.cursor-line {
 .syntax--meta.syntax--brace.syntax--curly.syntax--js + .syntax--variable {
   color: @syntax-color-function;
 }
+
+.syntax--module
+  + .syntax--meta.syntax--brace.syntax--curly.syntax--js
+  + .syntax--variable {
+  color: #fff;
+}
+
+// .syntax--keyword.syntax--control.syntax--module.syntax--js {
+//   color: @syntax-color-prop;
+// }
 
 .syntax--readwrite.syntax--js,
 .syntax--this.syntax--js {
@@ -300,4 +310,30 @@ atom-text-editor.is-focused .line.cursor-line {
 
 .syntax--entity.syntax--other.syntax--attribute-name {
   color: #addb67;
+}
+
+// JSON SPECIFIC
+.syntax--json {
+  .syntax--underline {
+    text-decoration: underline;
+  }
+  .syntax--constant {
+    color: @syntax-color-null;
+  }
+  .syntax--key {
+    .syntax--quoted {
+      color: @syntax-color-attr;
+    }
+  }
+  .syntax--punctuation + .syntax--quoted {
+    color: @syntax-color-primary !important;
+  }
+}
+
+.syntax--js {
+  // .syntax--constant.syntax--other.syntax--object.syntax--key.syntax--js {
+  //   .syntax--string.syntax--unquoted {
+  //     color: @syntax-color-primary;
+  //   }
+  // }
 }
